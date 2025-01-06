@@ -2,11 +2,11 @@
     "name": "deepseek-web",
     "displayName": "DeepSeek Web",
     "description": "Embed DeepSeek Chat (https://chat.deepseek.com/) in VS Code.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "KingLeo",
     "repository": {
       "type": "git",
-      "url": "https://github.com/your-username/your-repo-name.git"
+      "url": "https://github.com/KingLeoJr/vscode-deepseek-web.git"
     },
     "engines": {
       "vscode": "^1.75.0"
@@ -18,6 +18,11 @@
       "onCommand:deepseek.openChat"
     ],
     "main": "./out/extension.js",
+    "icon": "images/icon.png",
+    "galleryBanner": {
+      "color": "#FFFFFF",
+      "theme": "light"
+    },
     "contributes": {
       "commands": [
         {
@@ -35,5 +40,13 @@
       "@types/vscode": "^1.75.0",
       "typescript": "^4.9.4",
       "vsce": "^2.15.0"
-    }
+    },
+    "keywords": [
+      "deepseek",
+      "chat",
+      "web",
+      "ai",
+      "assistant"
+    ],
+    "license": "MIT"
   }

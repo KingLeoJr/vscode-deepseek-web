@@ -1,4 +1,7 @@
 
+![Banner](images\banner.jpg)
+![Icon](images\icon.jpg)
+
 # DeepSeek Chat VS Code Extension
 
 Embed [DeepSeek Chat](https://chat.deepseek.com/) directly into VS Code.
@@ -7,6 +10,7 @@ Embed [DeepSeek Chat](https://chat.deepseek.com/) directly into VS Code.
 
 - Open DeepSeek Chat in a Webview panel.
 - Send selected code to DeepSeek Chat for analysis.
+
 
 ## Commands
 
