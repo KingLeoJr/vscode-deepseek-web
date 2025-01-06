@@ -1,0 +1,39 @@
+{
+    "name": "deepseek-web",
+    "displayName": "DeepSeek Web",
+    "description": "Embed DeepSeek Chat (https://chat.deepseek.com/) in VS Code.",
+    "version": "1.0.0",
+    "publisher": "KingLeo",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/your-username/your-repo-name.git"
+    },
+    "engines": {
+      "vscode": "^1.75.0"
+    },
+    "categories": [
+      "Other"
+    ],
+    "activationEvents": [
+      "onCommand:deepseek.openChat"
+    ],
+    "main": "./out/extension.js",
+    "contributes": {
+      "commands": [
+        {
+          "command": "deepseek.openChat",
+          "title": "Open DeepSeek Chat"
+        }
+      ]
+    },
+    "scripts": {
+      "compile": "tsc -p ./",
+      "watch": "tsc -watch -p ./",
+      "package": "vsce package"
+    },
+    "devDependencies": {
+      "@types/vscode": "^1.75.0",
+      "typescript": "^4.9.4",
+      "vsce": "^2.15.0"
+    }
+  }
