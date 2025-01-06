@@ -1,6 +1,6 @@
 
-![Banner](images\banner.jpg)
-![Icon](images\icon.jpg)
+![Banner](images/banner.jpg)
+![Icon](images/icon.jpg)
 
 # DeepSeek Chat VS Code Extension
 
