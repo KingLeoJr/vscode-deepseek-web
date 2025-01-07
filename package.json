@@ -2,8 +2,8 @@
     "name": "deepseek-web",
     "displayName": "DeepSeek Web",
     "description": "Embed DeepSeek Chat (https://chat.deepseek.com/) in VS Code.",
-    "version": "1.0.1",
-    "publisher": "KingLeo",
+    "version": "1.0.3",
+    "publisher": "Kingleo",
     "repository": {
       "type": "git",
       "url": "https://github.com/KingLeoJr/vscode-deepseek-web.git"
@@ -24,12 +24,48 @@
       "theme": "light"
     },
     "contributes": {
+      "configuration": {
+        "title": "DeepSeek Web",
+        "properties": {
+          "deepseekWeb.chatUrl": {
+            "type": "string",
+            "default": "https://chat.deepseek.com/",
+            "description": "The URL of the DeepSeek Chat instance to embed."
+          }
+        }
+      },
       "commands": [
         {
           "command": "deepseek.openChat",
           "title": "Open DeepSeek Chat"
+        },
+        {
+          "command": "deepseek.refreshChat",
+          "title": "Refresh DeepSeek Chat"
+        },
+        {
+          "command": "deepseek.sendCode",
+          "title": "Send Code to DeepSeek Chat"
         }
-      ]
+      ],
+      "viewsContainers": {
+        "activitybar": [
+          {
+            "id": "deepseekWeb",
+            "title": "DeepSeek Web",
+            "icon": "images/activitybar-icon.svg"
+          }
+        ]
+      },
+      "views": {
+        "deepseekWeb": [
+          {
+            "id": "deepseekChatView",
+            "name": "DeepSeek Chat",
+            "type": "webview"
+          }
+        ]
+      }
     },
     "scripts": {
       "compile": "tsc -p ./",
@@ -46,7 +82,9 @@
       "chat",
       "web",
       "ai",
-      "assistant"
+      "assistant",
+      "vscode",
+      "extension"
     ],
     "license": "MIT"
   }
