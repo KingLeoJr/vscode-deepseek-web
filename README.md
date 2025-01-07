@@ -2,7 +2,7 @@
 
 Embed [DeepSeek Chat](https://chat.deepseek.com/) directly into your VS Code sidebar. This extension allows you to interact with DeepSeek Chat without leaving your editor.
 
-![Banner](images\banner.png)
+![Banner](images/Banner.png)
 
 ## Features
 
